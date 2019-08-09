@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Meta Data -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#555">
+        <meta name="background-color" content="#555">
+        <meta name="author" content="Riley Lewis | RiTech">
+        <meta name="description" content="London based small business, providing technical support and web development services.">
+        <meta name="keywords" content="technical, support, web, development, london, ontario, canada">
+        <title>RiTech | Serving London & Area</title>
+
+        <!-- Icons -->
+        <!--
+            Favicon: Icon that displays in the title bar of the website.
+            Apple-Touch-Icon: Icon that is the display image for a downloaded PWA
+        -->
+        <link rel="shortcut icon" href="./assets/logo.png">
+        <link rel="apple-touch-icon" href="./assets/logo.png">
+
+        <!-- Manifest -->
+        <!--
+            Information provided here is displayed in the `Application` section of
+            the dev tools. Includes the website's name, root folder as well as icons
+            used for the PWA (Progressive Web App) portion of the web app.
+        -->
+        <link rel="manifest" href="./assets/manifest.json">
+
+        <!-- CSS Styles -->
+        <!--
+            Bootstrap: Styling used to help with responsiveness of a website
+        -->
+        <link rel="stylesheet" type="text/css" href="./vendor/bootstrap/css/bootstrap.min.css">
+        <!--
+            Font Awesome: Provide icons used in the website
+        -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <!--
+            Custom: Styling used by the website that are provided as written
+        -->
+        <link rel="stylesheet" type="text/css" href="./css/app.css">
+    </head>
+    <!--
+        Body of the website, provided with the ID `page-top` to signify the page
+        of the content of the website.
+    -->
+    <body id="page-top">
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <a class="navbar-brand uppercase" href="#page-top">
+                <span>RITECH</span>
+                <br>
+                <small>Serving London & Area</small>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#ritech">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#clients">Clients</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div id="page-content">
+            <!-- Landing Page -->
+            <header class="landing">
+                <div class="home-wrap">
+                    <div class="home-inner" style="background-image: url(./assets/landing.jpeg);"></div>
+                    <div class="landing-overlay"></div>
+                </div>
+                <div class="caption">
+                    <h3>Developer</h3>
+                    <h3>Technical Analyst</h3>
+                </div>
+            </header>
+
+            <!-- About The CEO -->
+            <section id="about">
+                <div class="container text-center">
+                    <h3>Owner - Riley Lewis</h3>
+
+                    <div class="row justify-content-center">
+                        <did class="col-lg-6 col-md-6">
+                            <img class="rounded lazy-load" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="./assets/Profile/profile-ritech.jpeg" alt="Profile Image">
+                        </did>
+                        <div class="col-lg-6 col-md-6">
+                            <p>Riley Lewis is a driven and gifted individual when it comes to technology. His passion began during his high school years following exposure to courses in information technology and web/application development.</p>
+                            <p>After graduation, Riley decided to pursue further education by enrolling in the Computer Systems Technician Program at Fanshawe College in London, Ontario. After some introduction to web coding during the tech program, Riley continued his education at triOS College in order to gain the ability to develop professional websites and mobile application platforms. Riley has become a very skilled web developer.</p>
+                            <p>With a vast technical knowledge of computer systems, Riley has also established a business servicing individuals and small businesses. Whether they require basic computer maintenance (performance tune-ups, virus management or system recoveries), setup of peripheral devices (mice, printers, etc.) or the setup of entertainment systems (android boxes, sticks, Netflix, music programs, etc.). Riley is very capable to resolve any issues.</p>
+                            <p>RiTech's main focus is website and application development. Coding languages include:</p>
+
+                            <div class="tech">
+                                <a title="HTML5" aria-label="HTML5" class="btn-floating btn-html5 mx-1">
+                                    <i class="fab fa-html5 fa-lg"></i>
+                                </a>
+                                <a title="CSS3" aria-label="CSS3" class="btn-floating btn-css3 mx-1">
+                                    <i class="fab fa-css3 fa-lg"></i>
+                                </a>
+                                <a title="JavaScript" aria-label="JavaScript" class="btn-floating btn-js mx-1">
+                                    <i class="fab fa-js fa-lg"></i>
+                                </a>
+                                <a title="Bootstrap" aria-label="Bootstrap" class="btn-floating btn-bootstrap mx-1">
+                                    <i class="fab fa-bootstrap fa-lg"></i>
+                                </a>
+                                <a title="PHP" aria-label="PHP" class="btn-floating btn-php mx-1">
+                                    <i class="fab fa-php fa-lg"></i>
+                                </a>
+                                <a title="Font Awesome" aria-label="Font Awesome" class="btn-floating btn-font mx-1">
+                                    <i class="fab fa-font-awesome fa-lg"></i>
+                                </a>
+                            </div>
+                            <div class="tech">
+                                <a title="C#" aria-label="C#" class="btn-floating btn-blank mx-1">
+                                    <img src="./assets/Ext-Icons/c-sharp.png" alt="C# Icon">
+                                </a>
+                                <a title="Android Java" aria-label="Android Java" class="btn-floating btn-blank mx-1">
+                                    <img src="./assets/Ext-Icons/android-java.png" alt="Android Java Icon">
+                                </a>
+                                <a title="Swift" aria-label="Swift" class="btn-floating btn-blank mx-1">
+                                    <img src="./assets/Ext-Icons/apple-swift.png" alt="Swift Icon">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- RiTech Services -->
+            <section id="ritech">
+                <div class="container">
+                    <h3>Services</h3>
+
+                    <div class="row text-center justify-content-center">
+                        <div class="col-lg-4 col-md-6">
+                            <img class="rounded lazy-load" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="./assets/Services/service-web.jpeg" alt="Stock Image">
+                            <h4>Website Design, Development and Hosting</h4>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <img class="rounded lazy-load" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="./assets/Services/service-app-dev.jpeg" alt="Stock Image">
+                            <h4>Mobile Application Development and Design</h4>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <img class="rounded lazy-load" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="./assets/Services/service-malware.jpeg" alt="Stock Image">
+                            <h4>Virus, Spyware and Malware Removal</h4>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <img class="rounded lazy-load" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="./assets/Services/service-backup.jpeg" alt="Stock Image">
+                            <h4>Computer System Backup and Restoration</h4>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <img class="rounded lazy-load" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="./assets/Services/service-install.jpeg" alt="Stock Image">
+                            <h4>Software and Hardware Installation</h4>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <img class="rounded lazy-load" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="./assets/Services/service-stream.jpeg" alt="Stock Image">
+                            <h4>Stream Service Assistance</h4>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <img class="rounded lazy-load" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="./assets/Services/service-internet.jpeg" alt="Stock Image">
+                            <h4>Internet/Network Connectivity Solutions</h4>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <img class="rounded lazy-load" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="./assets/Services/service-peripheral.jpeg" alt="Stock Image">
+                            <h4>Peripheral Device Aid</h4>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <img class="rounded lazy-load" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="./assets/Services/service-entertainment.jpeg" alt="Stock Image">
+                            <h4>Entertainment System Setup</h4>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <img class="rounded lazy-load" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="./assets/Services/service-troubleshoot.jpeg" alt="Stock Image">
+                            <h4>General Troubleshooting</h4>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Clients -->
+            <section id="clients">
+                <div class="container">
+                    <h3>Clients</h3>
+
+                    <div class="row text-center justify-content-center">
+                        <div class="col-lg-4 col-md-6 hidden">
+                            <img class="rounded lazy-load" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://via.placeholder.com/640x360" alt="Company Image">
+                            <p class="fancy"><span>On Hold</span></p>
+                            <h4>Micheal Christopher Salon</h4>
+                            <h4><small><a rel="noreferrer" class="btn btn-secondary disabled" href="#" target="_blank">Click to View</a></small></h4>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <img class="rounded lazy-load" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="./assets/Company/client-mmg.jpg" alt="Company Image">
+                            <!-- <p class="fancy"><span>In Development</span></p> -->
+                            <h4><a rel="noreferrer" href="https://mikaylasmobilegrooming.azurewebsites.net" target="_blank">Mikayla's Mobile Grooming</a></h4>
+                            <!-- <h4><small><a rel="noreferrer" class="btn btn-secondary disabled" href="https://mikaylasmobilegrooming.azurewebsites.net" target="_blank">Click to View</a></small></h4> -->
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <img class="rounded lazy-load" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="./assets/Company/client-nclstudios.jpg" alt="Company Image">
+                            <!-- <p class="fancy"><span>In Development</span></p> -->
+                            <h4><a rel="noreferrer" href="https://nclstudios.azurewebsites.net" target="_blank">NCL Studios</a></h4>
+                            <!-- <h4><small><a rel="noreferrer" class="btn btn-secondary" href="#" target="_blank">Click to View</a></small></h4> -->
+                        </div>
+                        <div class="col-lg-4 col-md-6 hidden">
+                            <img class="rounded lazy-load" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://via.placeholder.com/640x360" alt="Company Image">
+                            <p class="fancy"><span>On Hold</span></p>
+                            <h4>Nigel Marson Architecture Photography</h4>
+                            <h4><small><a rel="noreferrer" class="btn btn-secondary disabled" href="#" target="_blank">Click to View</a></small></h4>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact -->
+            <section id="contact">
+                <div class="container">
+                    <h3>Contact RiTech</h3>
+
+                    <div class="row justify-content-center">
+                        <div class="col-md-6 col-12">
+                            <div class="form-group">
+                                <label for="contact-first-name">First Name *</label>
+                                <input class="form-input" id="contact-first-name" type="text" name="name" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12">
+                            <div class="form-group">
+                                <label for="contact-last-name">Last Name *</label>
+                                <input class="form-input" id="contact-last-name" type="text" name="name" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12">
+                            <div class="form-group">
+                                <label for="contact-email">Email *</label>
+                                <input class="form-input" id="contact-email" type="email" name="email" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12">
+                            <div class="form-group">
+                                <label for="contact-phone">Phone *</label>
+                                <input class="form-input" id="contact-phone" type="tel" name="phone" required>
+                            </div>
+                        </div>
+                        <div class="col-12 col-msg">
+                            <div class="form-group">
+                                <label for="contact-message">Your Message *</label>
+                                <textarea class="form-input" id="contact-message" name="message" required></textarea>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <p id="contact-status"></p>
+                        </div>
+                        <div class="col-12">
+                            <button class="btn btn-primary" onclick="sendMail()">
+                                Send Message
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer>
+                <div class="container">
+                    <div class="row text-center justify-content-center">
+                        <div class="col-lg-4">
+                            <h4>Contact</h4>
+                            <hr>
+                            <p><i class="fas fa-mobile-alt fa-lg"></i>&nbsp;&nbsp;(226) 919-8162</p>
+                            <p><i class="fas fa-envelope fa-lg"></i>&nbsp;&nbsp;ri.tech94@gmail.com</p>
+                        </div>
+                        <!-- <div class="col-lg-4">
+                            <h4>Hours</h4>
+                            <hr>
+                            <p>Mon-Fri: 9AM-8PM</p>
+                            <p>Sat: 9AM-5PM</p>
+                            <p>Sun: CLOSED</p>
+                        </div> -->
+                        <div class="col-lg-4">
+                            <h4>Social</h4>
+                            <hr>
+                            <a rel="noreferrer" title="Facebook" aria-label="Facebook" href="https://www.facebook.com/pg/RiTech94" target="_blank" class="btn-floating btn-fb mx-1">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a rel="noreferrer" title="LinkedIn" aria-label="LinkedIn" href="https://www.linkedin.com/in/riley-lewis-0383562b/" target="_blank" class="btn-floating btn-li mx-1">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Copyright -->
+                <div class="copyright text-center py-3">
+                    &copy; <span id="year"></span> Copyright:
+                    <a rel="noreferrer" href="/">RiTech</a>
+                </div>
+            </footer>
+        </div>
+
+        <!-- Scripts -->
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-143829151-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-143829151-1');
+        </script>
+        <!--
+            jQuery
+        -->
+        <script type="text/javascript" src="./vendor/jquery/jquery.min.js"></script>
+        <!-- 
+            Bootstrap
+        -->
+        <script type="text/javascript" src="./vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <!--
+            EmailJS
+
+        -->
+        <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+        <script type="text/javascript">
+            (function(){
+                emailjs.init("user_VrokykbQ58y3reC5WyIMb");
+            })();
+        </script>
+        <!--
+            Custom
+        -->
+        <script type="text/javascript" src="./js/app.js"></script>
+    </body>
+</html>
