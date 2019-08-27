@@ -1,4 +1,11 @@
+
+@font-face {
+    font-family: 'Kontor';
+    src: url('../fonts/kontd___.ttf');
+}
+
 h1 {
+    font-family: 'Kontor';
     font-size: 5vw;
     text-align: center;
 
