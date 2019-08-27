@@ -3,62 +3,49 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Nigel Marson Photography</title>
+        <title>Image Slider</title>
 
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="./vendor/bootstrap/css/bootstrap.min.css">
-
-        <!-- jQuery Image Slider CSS -->
-        <link rel="stylesheet" href="./vendor/jquery_image_slider/css/twentytwenty.css">
-
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="./css/app.css">
+        <link rel="stylesheet" href="./css/main.css">
     </head>
     <body>
-        <div class="row">
-            <div class="col-12" id="amli-parking-deck">
-                <h3>AMLI Parking Deck</h3>
 
-                <div class="demo">
-                    <img src="./assets/AMLI Parking Deck after.jpg" alt="Left Image">
-                    <img src="./assets/AMLI Parking Deck before .jpg" alt="Right Image">
-                </div>
+        <h1 id="amli-parking-deck">AMLI PARKING DECK</h1>
+        <div class="ba-slider">
+            <img src="./assets/AMLI Parking Deck before .jpg">
+            <div class="resize">
+                <img src="./assets/AMLI Parking Deck after.jpg">
             </div>
-            <div class="col-12" id="northside-medical-1">
-                <h3>Northside Medical 1</h3>
-
-                <div class="demo">
-                    <img src="./assets/Northside Medical 1 after.jpg" alt="Left Image">
-                    <img src="./assets/Northside Medical 1 before.jpg" alt="Right Image">
-                </div>
-            </div>
-            <div class="col-12" id="northside-medical-2">
-                <h3>Northside Medical 2</h3>
-
-                <div class="demo">
-                    <img src="./assets/Northside Medical 2 after.jpg" alt="Left Image">
-                    <img src="./assets/Northside Medical 2 before.jpg" alt="Right Image">
-                </div>
-            </div>
-            <div class="col-12" id="northside-medical-3">
-                <h3>Northside Medical 3</h3>
-
-                <div class="demo">
-                    <img src="./assets/Northside Medical 3 after.jpg" alt="Left Image">
-                    <img src="./assets/Northside Medical 3 before.jpg" alt="Right Image">
-                </div>
-            </div>
+            <span class="handle"></span>
         </div>
 
-        <!-- jQuery Image Slide JS -->
-        <script src="./vendor/jquery/jquery.min.js"></script>
-        <script src="./vendor/jquery_image_slider/js/jquery.twentytwenty.js"></script>
-        <script src="./vendor/jquery_image_slider/js/jquery.event.move.js"></script>
+        <h1 id="northside-medical-1">NORTHSIDE MEDICAL 1</h1>
+        <div class="ba-slider">
+            <img src="./assets/Northside Medical 1 before.jpg">
+            <div class="resize">
+                <img src="./assets/Northside Medical 1 after.jpg">
+            </div>
+            <span class="handle"></span>
+        </div>
 
-        <!-- Bootstrap JS -->
-        <script src="./vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <h1 id="northside-medical-2">NORTHSIDE MEDICAL 2</h1>
+        <div class="ba-slider">
+            <img src="./assets/Northside Medical 2 before.jpg">
+            <div class="resize">
+                <img src="./assets/Northside Medical 2 after.jpg">
+            </div>
+            <span class="handle"></span>
+        </div>
 
-        <!-- Custom JS -->
-        <script src="./js/app.js"></script>
+        <h1 id="northside-medical-3">NORTHSIDE MEDICAL 3</h1>
+        <div class="ba-slider">
+            <img src="./assets/Northside Medical 3 before.jpg">
+            <div class="resize">
+                <img src="./assets/Northside Medical 3 after.jpg">
+            </div>
+            <span class="handle"></span>
+        </div>
     </body>
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/main.js"></script>
 </html>
