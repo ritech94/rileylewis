@@ -1,16 +1,62 @@
-// Smoothing Scrolling
+// Smooth Scrolling
 $('.navbar a[href^="#"]').on('click', function(event) {
 
     var target = $( $(this).attr('href') );
+    var navHeight = 85;
 
     if( target.length ) {
         event.preventDefault();
         $('html, body').animate({
-            scrollTop: target.offset().top - 48
+            scrollTop: target.offset().top - navHeight
         }, 1000);
     }
 
 });
+
+// Close responsive menu when scroll trigger is clicked
+$('.navbar a[href^="#"]').click(() => {
+    $('.navbar-collapse').collapse('hide');
+})
+
+// Copyright Year
+$(function() {
+    var cYear = new Date().getFullYear();
+    $('#year').html(cYear);
+});
+
+// EmailJS
+$('#submit').on('click', function(e) {
+    e.preventDefault();
+
+    var cName = document.getElementById('contact-name');
+    var cEmail = document.getElementById('contact-email');
+    var cMessage = document.getElementById('contact-message');
+    var cStatus = document.getElementById('contact-status');
+
+    if (cName.value != '' && cEmail.value != '' && cMessage.value != '') {
+        // Send data via EmailJS
+        emailjs.send('gmail', 'ritech',
+        {
+            "to_email": "ri.tech94@gmail.com",
+            "from_email": "no-reply@alorthotics.ca",
+            "contact_email": cEmail.value,
+            "contact_name": cName.value,
+            "contact_phone": "No Data",
+            "contact_msg": cMessage.value
+        });
+
+        // Clear Form Fields
+        cName.value = '';
+        cEmail.value = '';
+        cMessage.value = '';
+
+        // Display Sent Message
+        cStatus.innerText = 'Message Sent!';
+    } else {
+        cStatus.innerText = 'Please fill the missing fields!';
+    }
+
+})
 
 // Lazy Load Images
 function lazyload() {
@@ -24,52 +70,6 @@ function lazyload() {
 $(function() {
     lazyload();
 })
-
-// Close responsive menu when scroll trigger is clicked
-$('.navbar a[href^="#"]').click(() => {
-    $('.navbar-collapse').collapse('hide');
-})
-
-// Year for copyright
-$(function() {
-    var theYear = new Date().getFullYear();
-    $('#year').html(theYear);
-});
-
-// EmailJS
-function sendMail() {
-    var cFN = document.getElementById('contact-first-name');
-    var cLN = document.getElementById('contact-last-name');
-    var cE = document.getElementById('contact-email');
-    var cP = document.getElementById('contact-phone');
-    var cM = document.getElementById('contact-message');
-    var cS = document.getElementById('contact-status');
-
-    if (cFN.value != '' && cLN.value != '' && cE.value != '' && cP.value != '' && cM.value != '') 
-    {
-        // Send data via EmailJS
-        emailjs.send('gmail', 'ritech', 
-        {
-            "contact_email": cE.value,
-            "contact_name": cFN.value + ' ' + cLN.value,
-            "contact_phone": cP.value,
-            "contact_msg": cM.value
-        });
-
-        // Clear Form Fields
-        cFN.value = '';
-        cLN.value = '';
-        cE.value = '';
-        cP.value = '';
-        cM.value = '';
-
-        // Display Sent Message
-        cS.innerHTML = 'Message Sent!';
-    }
-    else {
-        cS.innerHTML = 'Please fill the missing fields!';
-    }
-}
 
 // Service Worker Registration
 if ('serviceWorker' in navigator) {
