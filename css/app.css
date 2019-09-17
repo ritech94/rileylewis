@@ -54,7 +54,7 @@ img {
 }
 .navbar-brand small {
     border-top: 1px solid #000;
-    padding-top: 2.5px;
+    padding-top: 4.25px;
 }
 
 /* Landing Page */
@@ -362,6 +362,11 @@ footer {
 @media (min-width: 576px) {
     #about img {
         max-height: 500px;
+    }
+}
+@media (min-width: 992px) {
+    #about img {
+        max-width: 100% !important;
     }
 }
 
