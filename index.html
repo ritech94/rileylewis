@@ -40,6 +40,15 @@
             Custom: Styling used by the website that are provided as written
         -->
         <link rel="stylesheet" type="text/css" href="./css/app.css">
+        <!--
+            Custom: Temporary styling
+        -->
+        <style>
+            a.disabled {
+                pointer-events: none;
+                cursor: default;
+            }
+        </style>
     </head>
     <!--
         Body of the website, provided with the ID `page-top` to signify the page
@@ -196,34 +205,40 @@
 
                     <div class="row text-center">
                         <div class="col-lg-3 col-md-4 col-6">
-                            <a rel="noreferrer" href="http://alorthotics.ca" target="_blank">
-                                <img class="rounded lazy-load" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="./assets/Company/client-alorthotics.png" alt="Company Image">
-                            </a>
-                            <p><a rel="noreferrer" href="http://alorthotics.ca" target="_blank">AL Orthotics</a></p>
+                            <div class="client-info">
+                                <a class="disabled" rel="noreferrer" href="http://alorthotics.ca" target="_blank">
+                                    <img class="rounded lazy-load" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="./assets/Company/client-alorthotics.png" alt="Company Image">
+                                </a>
+                                <p><a class="disabled" rel="noreferrer" href="http://alorthotics.ca" target="_blank">AL Orthotics</a></p>
+                            </div>
                         </div>
                         <div class="col-lg-3 col-md-4 col-6">
-                            <a rel="noreferrer" href="https://mikaylasmobilegrooming.azurewebsites.net" target="_blank">
+                            <a class="disabled" rel="noreferrer" href="https://mikaylasmobilegrooming.azurewebsites.net" target="_blank">
                                 <img class="rounded lazy-load" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="./assets/Company/client-mmg.jpg" alt="Company Image">
                             </a>
-                            <p><a rel="noreferrer" href="https://mikaylasmobilegrooming.azurewebsites.net" target="_blank">Mikayla's Mobile Grooming</a></p>
+                            <p><a class="disabled" rel="noreferrer" href="https://mikaylasmobilegrooming.azurewebsites.net" target="_blank">Mikayla's Mobile Grooming</a class="disabled"></p>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-6" style="display: none;">
+                            <div class="client-info">
+                                <a rel="noreferrer" href="https://mikelewisholdings.ca" target="_blank">
+                                    <img class="rounded lazy-load" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="./assets/Company/client-mikelewisholdings.jpg" alt="Company Image">
+                                </a>
+                                <p><a rel="noreferrer" href="https://mikelewisholdings.ca" target="_blank">Mike Lewis Holdings</a></p>
+                            </div>
                         </div>
                         <div class="col-lg-3 col-md-4 col-6">
-                            <a rel="noreferrer" href="https://mikelewisholdings.ca" target="_blank">
-                                <img class="rounded lazy-load" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="./assets/Company/client-placeholder.svg" alt="Company Image">
-                            </a>
-                            <p><a rel="noreferrer" href="https://mikelewisholdings.ca" target="_blank">Mike Lewis Holdings</a></p>
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-6">
-                            <a rel="noreferrer" href="https://nclstudios.azurewebsites.net" target="_blank">
+                            <a class="disabled" rel="noreferrer" href="https://nclstudios.azurewebsites.net" target="_blank">
                                 <img class="rounded lazy-load" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="./assets/Company/client-nclstudios.jpg" alt="Company Image">
                             </a>
-                            <p><a rel="noreferrer" href="https://nclstudios.azurewebsites.net" target="_blank">NCL Studios</a></p>
+                            <p><a class="disabled" rel="noreferrer" href="https://nclstudios.azurewebsites.net" target="_blank">NCL Studios</a class="disabled"></p>
                         </div>
                         <div class="col-lg-3 col-md-4 col-6">
-                            <a rel="noreferrer" href="">
-                                <img class="rounded lazy-load" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="./assets/Company/client-placeholder.svg" alt="Company Image">
-                            </a>
-                            <p><a rel="noreferrer" href="" target="_blank">Nigel Marson Photography</a></p>
+                            <div class="client-info">
+                                <a class="disabled" rel="noreferrer" href="http://nigelmarson.com/" target="_blank">
+                                    <img class="rounded lazy-load" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="./assets/Company/client-nigelmarsonphotography.png" alt="Company Image">
+                                </a class="disabled">
+                                <p><a class="disabled" rel="noreferrer" href="http://nigelmarson.com" target="_blank">Nigel Marson Photography</a class="disabled"></p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -251,10 +266,10 @@
                         </li>
                         <li>
                             <div class="social-icons">
-                                <a rel="noreferrer" title="Facebook" aria-label="Facebook" href="" target="_blank" class="btn-floating mx-1 text-center">
+                                <a rel="noreferrer" title="Facebook" aria-label="Facebook" href="https://www.facebook.com/riley.lewis.5" target="_blank" class="btn-floating mx-1 text-center">
                                     <i class="fab fa-facebook-f"></i>
                                 </a>
-                                <a rel="noreferrer" title="LinkedIn" aria-label="LinkedIn" href="" target="_blank" class="btn-floating mx-1 text-center">
+                                <a rel="noreferrer" title="LinkedIn" aria-label="LinkedIn" href="https://www.linkedin.com/in/riley-lewis-0383562b/" target="_blank" class="btn-floating mx-1 text-center">
                                     <i class="fab fa-linkedin"></i>
                                 </a>
                             </div>

@@ -235,6 +235,14 @@ img {
     border: 1px solid #CCC;
     margin-bottom: 10px;
 }
+#clients .row .col-lg-3 {
+    position: relative;
+}
+#clients .client-info {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
 .fancy {
     line-height: 0.5;
     padding-top: 10px;
