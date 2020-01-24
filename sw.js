@@ -24,6 +24,11 @@ self.addEventListener('install', event => {
 
 // The activate handler takes care of cleaning up old caches
 self.addEventListener('activate', event => {
+    // Remove old service workers before initializing a new one
+    // self.registration.unregister().then(function() {
+    //     return self.clients.matchAll();
+    // });
+
     const currentCaches = [PRECACHE, RUNTIME];
     event.waitUntil(
         caches.keys().then(cacheNames => {
